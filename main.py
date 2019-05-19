@@ -66,12 +66,6 @@ def handleMessage(msg):
         msg = msg.replace("/","")
         msg = msg.replace("@KrakenProject_bot",'')
 
-        if msg.isupper() == True:
-            msg = msg.lower()
-        
-        if msg.istitle() == True:
-            msg = msg[0].lower() + msg[1:]
-
         if msg == 'devices':
             return getDevices()
 
